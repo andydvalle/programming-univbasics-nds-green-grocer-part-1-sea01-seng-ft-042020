@@ -18,7 +18,7 @@ def consolidate_cart(cart)
   receipt = []
   
   cart.each do |hash|
-    #binding.pry
+    binding.pry
     item = hash.keys[0]
     if receipt[hash]
       receipt[hash][:count] +=1
