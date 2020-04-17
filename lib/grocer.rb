@@ -20,7 +20,7 @@ def consolidate_cart(cart)
   cart.each do |item|
     item_name = item.values[0]
     binding.pry
-    if receipt.include?(item_name)
+    if receipt.include?(item)
       receipt[item][:count] += 1
     else
       item[:count] = 1 
