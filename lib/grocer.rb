@@ -21,9 +21,8 @@ def consolidate_cart(cart)
     binding.pry
     if receipt[hash]
       receipt[hash][:count] +=1
-    end
-    hash[:count] = 1
-    receipt << hash
+    else
+      receipt[hash][:count] = 1
   end
   return receipt
 end
