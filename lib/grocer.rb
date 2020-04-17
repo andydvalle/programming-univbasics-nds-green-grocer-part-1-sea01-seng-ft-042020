@@ -18,8 +18,13 @@ def consolidate_cart(cart)
   receipt = []
   
   cart.each do |item|
+    item_name = item.keys[0]
+    if receipt[item_name]
       item[:count] = 1 
-      receipt << item
+    else
+      item[:count] = 1
+    end
+    receipt << item
   end
   return receipt
 end
