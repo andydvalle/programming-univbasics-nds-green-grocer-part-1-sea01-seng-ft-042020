@@ -19,6 +19,7 @@ def consolidate_cart(cart)
   
   cart.each do |hash|
     binding.pry
+    hash[:count] = 1
     receipt << hash
   end
   return receipt
