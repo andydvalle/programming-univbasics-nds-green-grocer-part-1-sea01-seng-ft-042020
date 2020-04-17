@@ -23,6 +23,7 @@ def consolidate_cart(cart)
       receipt[hash][:count] +=1
     else
       receipt[hash][:count] = 1
+    end
   end
   return receipt
 end
