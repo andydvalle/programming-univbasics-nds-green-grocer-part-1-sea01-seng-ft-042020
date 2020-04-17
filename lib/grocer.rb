@@ -19,7 +19,8 @@ def consolidate_cart(cart)
   
   cart.each do |item|
     item_name = item.keys[0]
-    if 
+    if receipt[item_name]
+      receip
     end
   end
   return receipt
