@@ -19,7 +19,7 @@ def consolidate_cart(cart)
   
   cart.each do |item|
     item_name = item.keys[0]
-    if receipt[item_name] == true
+    receipt.include?(item_name)
       item[:count] += 1 
     else
       item[:count] = 1
