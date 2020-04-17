@@ -19,8 +19,8 @@ def consolidate_cart(cart)
   
   cart.each do |item|
     item_name = item.keys[0]
-    if receipt.include?(item_name)
-      receipt[item][:count] += 1
+    if receipt[item]
+      item[:count] += 1
     else
       item[:count] = 1 
       receipt << item
