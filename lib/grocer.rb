@@ -16,7 +16,6 @@ end
 def consolidate_cart(cart)
 
   receipt = []
-  count = 0 
   
   cart.each do |hash|
     hash.each do |key,value|
