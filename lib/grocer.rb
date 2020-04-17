@@ -20,7 +20,7 @@ def consolidate_cart(cart)
   
   cart.each do |hash|
     hash.each do |key,value|
-    #binding.pry
+    binding.pry
       if find_item_by_name_in_collection(value,receipt)
         {}
       end
