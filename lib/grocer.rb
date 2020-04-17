@@ -21,10 +21,10 @@ def consolidate_cart(cart)
     hash.each do |key,value|
     binding.pry
       if find_item_by_name_in_collection(value,cart)
-        if hash[:count]
-          hash[:count] +=1 
+        if receipt[hash]
+          receipt[hash][:count] +=1 
         else
-          hash[:count] = 1
+          receipt[hash][:count] = 1
         end
       end
     end
