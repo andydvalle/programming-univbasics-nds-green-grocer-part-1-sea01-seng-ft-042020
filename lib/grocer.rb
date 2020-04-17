@@ -21,7 +21,7 @@ def consolidate_cart(cart)
     item_name = item.values[0]
     binding.pry
     if receipt.include?(item)
-      receipt[item][:count] += 1
+      item[:count] += 1
     else
       item[:count] = 1 
       receipt << item
