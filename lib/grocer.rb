@@ -22,7 +22,7 @@ def consolidate_cart(cart)
     hash.each do |key,value|
     binding.pry
       if find_item_by_name_in_collection(value,receipt)
-        {}
+        hash[:count]
       end
     end
     #binding.pry
