@@ -21,6 +21,7 @@ def consolidate_cart(cart)
   cart.each do |hash|
     hash.each do |key,value|
       binding.pry
+      
     end
     #binding.pry
     hash[:count] = count+1
